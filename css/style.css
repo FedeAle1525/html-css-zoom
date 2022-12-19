@@ -16,6 +16,7 @@ img{
 .row{
     display: flex;
     flex-wrap: wrap;
+    /* margin: 0 -8px; */
 }
 
 .row.between{
@@ -23,12 +24,16 @@ img{
     padding: 15px 0;
 }
 
+[class^="col"]{
+    padding: 0 8px;
+}
+
 /* DEBUG */
 
-.debug .col{
-    /* padding: 10px; */
+/* .debug .col{
+     padding: 10px;
     border: 3px solid white;
-}
+} */
 
 /* MAIN */
 
