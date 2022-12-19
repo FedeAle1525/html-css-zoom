@@ -13,6 +13,14 @@ img{
     margin: 0 auto;
 }
 
+.label{
+    background-color: rgba(155, 150, 150, 0.3);
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 5px;
+    border-radius: 10%;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +52,17 @@ img{
     padding-top: 80px;
 }
 
+.row.view{
+    justify-content: flex-end;
+}
+
+.label.speaker::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f58d";
+    margin-right: 5px;
+}
+
 .section-images{
     height: calc(100% - 82px);
 }
@@ -58,9 +77,6 @@ img{
 }
 
 .user{
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    line-height: 14px;
     position: absolute;
     left: 0;
     bottom: 0;
