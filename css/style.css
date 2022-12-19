@@ -4,17 +4,42 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.between{
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
 /* DEBUG */
+
+.debug .col{
+    padding: 10px;
+    border: 3px solid white;
+}
 
 /* MAIN */
 
 .main-content{
     height: 100vh;
     background-color: black;
+    padding-top: 80px;
 }
 
 .section-images{
     height: calc(100% - 82px);
+}
+
+.row-col-7 > [class^="col"]{
+flex-basis: calc(100% / 7);
 }
 
 .section-icons{
