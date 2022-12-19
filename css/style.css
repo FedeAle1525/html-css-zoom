@@ -8,15 +8,21 @@ img{
     width: 100%;
 }
 
+ul{
+    list-style-type: none;
+}
+
 .container{
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 
+
+/* Regola generale per etichette */
 .label{
     background-color: rgba(155, 150, 150, 0.3);
     font-size: 14px;
-    line-height: 14px;
+    line-height: 20px;
     padding: 0 5px;
     border-radius: 10%;
 }
@@ -29,11 +35,27 @@ img{
 
 .row.between{
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 [class^="col"]{
     padding: 0 8px;
+}
+
+/* Regole per generali per lista di icone */
+.list{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.list > li{
+    margin-left: 10px;
+}
+
+.list i{
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
 /* DEBUG */
@@ -44,6 +66,8 @@ img{
 } */
 
 /* MAIN */
+
+/* SECTION IMAGES */
 
 .main-content{
     height: 100vh;
@@ -93,7 +117,14 @@ img{
 flex-basis: calc(100% / 7);
 }
 
+/* SECTION ICONS */
+
 .section-icons{
     height: 82px;
     background-color: grey;
 }
+
+.green{
+    color: green;
+}
+
