@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+}
+
 .container{
     width: 800px;
     margin: 0 auto;
@@ -22,7 +26,7 @@
 /* DEBUG */
 
 .debug .col{
-    padding: 10px;
+    /* padding: 10px; */
     border: 3px solid white;
 }
 
@@ -31,11 +35,37 @@
 .main-content{
     height: 100vh;
     background-color: black;
+    color: white;
     padding-top: 80px;
 }
 
 .section-images{
     height: calc(100% - 82px);
+}
+
+.preview{
+    position: relative;
+}
+
+.preview-img{
+    background-size: contain;
+    background-position: center;
+}
+
+.user{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.user::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f131";
+    margin-right: 5px;
 }
 
 .row-col-7 > [class^="col"]{
