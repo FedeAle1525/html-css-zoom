@@ -35,7 +35,7 @@ ul{
 
 .row.between{
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 [class^="col"]{
@@ -73,7 +73,7 @@ ul{
     height: 100vh;
     background-color: black;
     color: white;
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .row.view{
@@ -88,7 +88,7 @@ ul{
 }
 
 .section-images{
-    height: calc(100% - 82px);
+    height: calc(100% - 110px);
 }
 
 .preview{
@@ -120,7 +120,7 @@ flex-basis: calc(100% / 7);
 /* SECTION ICONS */
 
 .section-icons{
-    height: 82px;
+    height: 85px;
     background-color: grey;
 }
 
