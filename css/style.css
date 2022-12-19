@@ -3,3 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* DEBUG */
+
+/* MAIN */
+
+.main-content{
+    height: 100vh;
+    background-color: black;
+}
+
+.section-images{
+    height: calc(100% - 82px);
+}
+
+.section-icons{
+    height: 82px;
+    background-color: grey;
+}
