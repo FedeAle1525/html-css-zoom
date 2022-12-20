@@ -248,6 +248,7 @@
 
         </section>
 
+        <!-- Semanticamente si poteva utilizzare un tag <aside> che indica del contenuto non legato a quello della pagina -->
         <section class="section-icons">
             <div class="row between">
                 <div class="col">
@@ -255,10 +256,14 @@
                     <ul class="list">
                         <li>
                             <!-- Microfono -->
-                            <i class="fa-solid fa-microphone"></i>
-                            <p>Mute</p>
+                            <!-- Era meglio gestire il tutto come unico pulsate e raggruppare i vari elementi-->
+                            <!-- Per gestire poi l'allineamento si considera <li> come elemento flex -->
+                            <div>
+                                <i class="fa-solid fa-microphone"></i>
+                                <p>Mute</p>
+                            </div>
+                            <li>&#8963;</li>
                         </li>
-                        <li>&#8963;</li>
                         <li>
                             <!-- Camera -->
                             <i class="fa-solid fa-video"></i>
@@ -313,7 +318,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col">End Meeting</div>
+                <!-- Si può trattare come un bottone -->
+                <div class="col end">
+                    <button class="end">End Meeting</button>
+                </div>
             </div>
         </section>
 
